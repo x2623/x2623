@@ -1,0 +1,13 @@
+struct book
+{
+	char name[20];
+	char secure[20];
+	int price;
+};
+int main()
+{
+	struct book a = { "c语言","abc2002",25 };
+	struct book* b = &a;
+	printf("%s\n", a.name);
+	printf("%s\n", b->name);
+}
